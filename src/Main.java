@@ -7,6 +7,12 @@ public class Main {
         System.out.print("Enter your grade (9 - 12) : ");
         String unconvertedGrade = s.nextLine();
         int grade = Integer.parseInt(unconvertedGrade);
+        System.out.println("Hello " + name + ", welcome to Brooklyn Tech Simulator! In this simulator, you will have to go through a 2 week 10-day cycle of a Brooklyn Tech student. \nIn these 10 days, you will have to take exams, do classwork, answer questions when the teacher calls you out, and more!");
+        System.out.print("Would you like to start? (1 for yes, anything else for no): ");
+        String startOrNot = s.nextLine();
+        if (!startOrNot.equals("1")) {
+
+        }
         if (grade >= 9 && grade <= 12) {
             Schedule schedule = new Schedule(grade);
         }
@@ -15,7 +21,6 @@ public class Main {
             System.exit(0);
         }
         Student student = new Student(name, grade);
-        System.out.println("Hello " + name + ", welcome to Brooklyn Tech Simulator! In this simulator, you will have to go through a 2 week 10-day cycle of a Brooklyn Tech student. \nIn these 10 days, you will have to take exams, do classwork, answer questions when the teacher calls you out, and more!");
         for (int day = 1; day < 11; day++) {
             System.out.println("Today is day " + day + "!");
             for (int period = 1; period < 10; period++) {

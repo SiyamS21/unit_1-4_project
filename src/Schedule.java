@@ -102,7 +102,7 @@ public class Schedule {
             dayEightPeriodNine= "Lunch";
             dayNinePeriodNine= "Lunch";
             dayTenPeriodNine= "Lunch";
-            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            String[] day1 = {};
 
 
         }
